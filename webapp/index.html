@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <title> Light App</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/webshell.css"/>
+    <script type="text/javascript" src="js/webshell.js"></script>
+
+</head>
+
+<!-- Naviagation Bar -->
+<nav class = "navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
+
+    <button class = "navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id = "collapse_target">
+        <a class = "navbar-brand"><img src = "img/light-bulb.png"></a> 
+        <span class = "navbar-text">Light App </span>
+        <ul class = "navbar-nav">
+            <li class="nav-item">
+                <a class = "nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class = "nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item" >
+                <a class = "nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Login</a>
+    </div>
+</nav>
+
+<body id ="grad1">
+
+    <!-- Left and Right of page -->
+    <div class = "row no-gutters">
+        <div class="col-md-6 no-gutters">
+            <!-- lesson plan side -->
+            <div class = "leftside">
+                
+                <h1 style = font-size:45px;>Activity</h1>
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <div class="jumbotron" id = "lesson-plan">
+                    <p style= font-size:20px>1)First lesson will be how to turn on a light.</p>
+                    <p style= font-size:20px>2)Teach the computer a "Trick" (function) on how to turn on a lamp.</p>
+                    <p style= font-size:20px>Below are the tools you will need.</p>
+                    
+                </div>
+        
+            </div>
+           
+        </div>
+        <div class = "col-md-6 no-gutters">
+            <!-- IDE side with run button -->
+            <div class = "rightside">
+                    <h1 style = font-size:45px;>Terminal</h1>
+                    <div class="divider-custom divider-dark">
+                        <div class="divider-custom-line"></div>
+                    </div>
+
+                   
+
+                    <iframe name="Stack" src="http://localhost:57575" style='height: 100%; width: 100%; padding-right: 20px;' frameborder="0" scrolling="no" id="iframe"></iframe>
+                       
+
+               
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
